@@ -93,15 +93,20 @@ body {
   color: #999;
 }
 
-.input-box .show-hide span.show {
+.input-box .show-hide 
+span.show {
   display: none;
 }
 
-#passToggle:checked ~ .form .input-box .show-hide span.show {
+#passToggle:checked ~ 
+.form .input-box 
+.show-hide span.show {
   display: block;
 }
 
-#passToggle:checked ~ .form .input-box .show-hide span.hide {
+#passToggle:checked ~ 
+.form .input-box 
+.show-hide span.hide {
   display: none;
 }
 
@@ -118,7 +123,9 @@ body {
   padding-right: 100px;
 }
 
-#passToggle:checked ~ .form .input-box input.passInput {
+#passToggle:checked ~ 
+.form .input-box 
+input.passInput {
   -webkit-text-security: disc;
 }
 
@@ -179,11 +186,13 @@ button {
 .avatar svg#monkey-hands {
   z-index: 2;
   transform-style: preserve-3d;
-  transform: translateY(128px) rotateX(-21deg);
+  transform: translateY(128px) 
+             rotateX(-21deg);
 }
 
 #passToggle:checked ~ .avatar svg#monkey-hands {
-  transform: translate(0) rotate(0);
+  transform: translate(0) 
+             rotate(0);
 }
 
 .avatar::before {
@@ -204,7 +213,8 @@ button {
   border-bottom: 15px solid #3c3a2a;
 }
 
-#passToggle:not(:checked) ~ .avatar svg#monkey .monkey-eye {
+#passToggle:not(:checked) ~ 
+.avatar svg#monkey .monkey-eye {
   animation: blink 10s 1s infinite;
   transition: 0.2s;
 }
@@ -253,7 +263,9 @@ button {
   }
 }
 
-#passToggle:not(:checked) ~ .form:focus-within ~ .avatar svg#monkey {
+#passToggle:not(:checked) ~ 
+.form:focus-within ~ 
+.avatar svg#monkey {
   animation: avatarMoveAnim 3s ease infinite 1s;
 }
 
